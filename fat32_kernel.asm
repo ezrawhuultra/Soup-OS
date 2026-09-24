@@ -1,7 +1,7 @@
 [ORG 0x0000]
 [BITS 16]
 
-; FAT32 BPB offsets
+; FAT32 BPB offsets (think these are right)
 BytesPerSector      equ 0x0B
 SectorsPerCluster   equ 0x0D
 ReservedSectors     equ 0x0E
@@ -279,8 +279,8 @@ disk_error:
     call print_string
     jmp $
 
-; Data
-init_msg db 'FAT32 Reader v1.0', 0
+; These mean and do nothing right now. What a shame.
+init_msg db 'Soup OS', 0
 volume_msg db 'Volume: ', 0
 files_msg db 'Files in root:', 0
 size_msg db ' - Size: ', 0
