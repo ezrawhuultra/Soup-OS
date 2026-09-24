@@ -271,7 +271,7 @@ newline:
 
 clear_screen:
     mov ah, 0x00
-    mov al, 0x03        ; 80x25 text mode
+    mov al, 0x03        ; 80x25 text mode. SOUNDS HIGH-DEF DUDE!!!!!!
     int 0x10
     ret
 
