@@ -1,3 +1,4 @@
+; oh wow it starts at zero
 [ORG 0x0000]
 [BITS 16]
 
